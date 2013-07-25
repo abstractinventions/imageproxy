@@ -1,7 +1,5 @@
 package com.abstractinventions.imageproxy
 
-import com.abstractinventions.imageproxy.ImageProxy
-
 /** embedded server */
 object Server {
   val logger = org.clapper.avsl.Logger(Server.getClass)

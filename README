@@ -1,6 +1,6 @@
-A simple image proxy written in scala.
+A simple image proxy written in scala (mainly as a learning exercise).
 
-Provide the port to bind to as an argument.
+Provide the port to bind to as the first argument.
 
 Clients should execute a GET request to /i?u=<url>. The url specified in the u parameter will be fetched and streamed back to the client.
 
