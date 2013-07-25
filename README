@@ -1,1 +1,9 @@
-This file was created by IntelliJ IDEA (Leda) IU-129.961 for binding GitHub repository
+A simple image proxy written in scala.
+
+Provide the port to bind to as an argument.
+
+Clients should execute a GET request to /i?u=<url>. The url specified in the u parameter will be fetched and streamed back to the client.
+
+e.g.
+
+http://localhost:<port>/i?u=http://images.url.com
