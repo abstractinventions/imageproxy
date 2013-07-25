@@ -25,10 +25,9 @@ with ServerErrorResponse {
           for {
             resp <- Http(fetchReq)
           } {
-
-            val hdrFunctions:Iterable[ResponseFunction[Any]] = mapAsScalaMapConverter(resp.getHeaders)
+            val hdrFunctions: Iterable[ResponseFunction[Any]] = mapAsScalaMapConverter(resp.getHeaders)
               .asScala.mapValues(_.asScala)
-              .map {case (k,v) => ResponseHeader(k,v)}
+              .map { case (k, v) => ResponseHeader(k, v) }
 
             val responseBytes = ResponseBytes(resp.getResponseBodyAsBytes)
 
